@@ -99,3 +99,65 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="245dp" />
 ```
+# 线性布局
+```
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One,One"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="One,Two"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One,Three"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="One,Four"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+```
+# 表格布局
+```
+<TableRow>
+            <TextView
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginLeft="10sp"
+                android:text=""/>
+
+        <TextView
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:padding="10sp"
+            android:text="Open..." />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Ctrl-O"
+                android:padding="10dp"
+                android:layout_marginRight="10sp"/>
+        </TableRow>
+```
